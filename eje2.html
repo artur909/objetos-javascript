@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+function mostrar () {
+	var x=document.forms[0].elements.length-1;
+	for (var y=0;y<x;y++){
+		alert(document.forms[0].elements[y].value);
+	}
+}
+</script>
+<form name="form1">
+Nombre:<input type="text" name="nombre"><br>
+Apellidos:<input type="text" name="apellidos"><br>
+Direccion:<input type="text" name="direccion"><br>
+<input type="button" value="Haz click" onClick="mostrar()">
+</form>
+</body>
+</html>
